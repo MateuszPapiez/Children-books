@@ -5,19 +5,40 @@
       "color": "#ff8A65",
       "onebooks": [
           {
-              "main_title": "An",
-              "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "main_title": "Mały Fabian i jego magiczny groch",
+              "top_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.",
+              "top_image": "Inside_category_1",
+              "gradient_color_first": "#54772E",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7",
+              "book_format": {
+                  "text_book_inside": "**Słoń z porcelany** Jaś i Zosia bardzo lubili odwiedzać babcię Stefcię. Babcia miała wiele prawdziwych skarbów: kolorowe pocztówki, maszynę do pisania i albumy ze starymi zdjęciami. Jednak najciekawszym eksponatem w jej domu była figurka słonia z porcelany. Słoń zajmował honorowe miejsce na szafce i babcia często powtarzała, że przynosi jej szczęście. Pewnego dnia, gdy babcia przyrządzała w kuchni obiad, Jaś i Zosia zakradli się do jej sypialni. Z ciekawością zerknęli na figurkę słonia. Czy rzeczywiście była magiczna? - Obejrzymy ją sobie, a potem odstawimy na miejsce. – Zaproponował Jaś. – Może dzięki temu i nam przyniesie trochę szczęścia. Chłopiec ostrożnie zdjął figurkę z szafki. Słoń był dość ciężki, ważył ze trzy kilo i coś brzęczało w jego wnętrzu. Czy to były monety? Jaś mocno nim potrząsnął. Niestety, w tej chwili słoń wyślizgnął mu się z ręki, a potem z hukiem uderzył o podłogę i rozpadł na wiele kawałków. Jaś i Zosia z przerażeniem zerknęli na zniszczoną porcelanę. Potłukli magicznego słonia! Babcia nie mogła się o tym dowiedzieć! - Dlatego nic jej nie powiemy! – Postanowili. – Może pomyśli, że to kot Bonifacy strącił słonia ogonem.",
+                  "title_book_inside": "Lorem Ipsum"
+              }
           },
           {
-              "main_title": "sadasdsad",
-              "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "main_title": "Grupa Smoka rozbita przez Warszawska Policje",
+              "top_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.",
+              "top_image": "Inside_category_2",
+              "gradient_color_first": "#7F9238",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           },
           {
-              "main_title": "sadasdsad",
-              "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "main_title": "Profesor Wiktor i jego niesforny wynalazek",
+              "top_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.",
+              "top_image": "Inside_category_3",
+              "gradient_color_first": "#8A806A",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
+          },
+          {
+              "main_title": "Boss z Lublina juź świruje na wolności",
+              "top_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.",
+              "top_image": "Inside_category_4",
+              "gradient_color_first": "#7E6E43",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           }
       ]
    },
@@ -29,17 +50,26 @@
           {
               "main_title": "Mo",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           },
           {
               "main_title": "sadasdsad",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           },
           {
               "main_title": "sadasdsad",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           }
       ]
    },
@@ -51,17 +81,26 @@
           {
               "main_title": "dr",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           },
           {
               "main_title": "sadasdsad",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           },
           {
               "main_title": "sadasdsad",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           }
       ]
    },
@@ -73,17 +112,26 @@
           {
               "main_title": "Ks",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           },
           {
               "main_title": "sadasdsad",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           },
           {
               "main_title": "sadasdsad",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           }
       ]
    },
@@ -95,17 +143,26 @@
           {
               "main_title": "co",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           },
           {
               "main_title": "sadasdsad",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           },
           {
               "main_title": "sadasdsad",
               "top_description": "jfdsfhdsjfsjf",
-              "top_image": "M_I_Coming"
+              "top_image": "M_I_Coming",
+              "gradient_color_first": "#9BE249",
+              "gradient_color_second": "#222222",
+              "color_title": "#FBD4C7"
           }
       ]
    }

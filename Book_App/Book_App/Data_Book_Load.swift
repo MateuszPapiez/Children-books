@@ -8,33 +8,45 @@
 import Foundation
 import SwiftUI
 
-struct Book: Codable {
+struct Book: Codable, Hashable {
     let image: String
     let title: String
     let color: String
     let onebooks: [Onebook]
-    //let t1: String
-    //let t2: String
-    //let t2: String
-    //let t3: String
     
     static let allBook: [Book] = Bundle.main.decode(file: "Ankieta.json")
     static let simplebook: Book = allBook[0]
     
-    //static let one: [Book] = Bundle.main.decode(file: "Ankieta.json")
-    //static let oneb: Book = onebook[0]
+    
 }
-struct Onebook: Codable, Hashable {
+struct Onebook: Codable, Hashable, Identifiable {
+    var id: UUID? = UUID()
     let main_title: String
     let top_description: String
     let top_image: String
+    let gradient_color_first: String
+    let gradient_color_second: String
+    let color_title: String
+    let book_content: Book_inside?
+    
+    private enum CodingKeys: String, CodingKey {
+        case main_title = "main_title"
+        case top_description
+        case top_image
+        case gradient_color_first
+        case gradient_color_second
+        case color_title
+        case book_content = "book_format"
+    }
 }
-//struct TextBook: Codable {
-    //var t1: String
-//}
 
 
-//var book_data: [Book] = load("Ankieta.json")
+struct Book_inside: Codable,Hashable {
+
+    let text_book_inside: String?
+    let title_book_inside: String?
+
+}
 
 extension Bundle {
     func decode<T: Decodable>(file: String) -> T {
@@ -48,8 +60,6 @@ extension Bundle {
         
         let decoder = JSONDecoder()
         
-        
-        
        // guard let loadedData = try? decoder.decode(T.self, from: data) else {
             //fatalError("Could not decode \(file) from bundle.")
         //}
@@ -59,7 +69,6 @@ extension Bundle {
         } catch {
             loadedData = nil
         }
-        
         
         if let notopcionalloadedData = loadedData {
             return notopcionalloadedData
@@ -77,11 +86,11 @@ extension Color {
         Scanner(string: hex).scanHexInt64(&int)
         let a, r, g, b: UInt64
         switch hex.count {
-        case 3: // RGB (12-bit)
+        case 3:
             (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
-        case 6: // RGB (24-bit)
+        case 6:
             (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-        case 8: // ARGB (32-bit)
+        case 8:
             (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
         default:
             (a, r, g, b) = (1, 1, 1, 0)

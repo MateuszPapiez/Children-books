@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1C3342298D212000D22AEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B1C3341298D212000D22AEB /* GoogleService-Info.plist */; };
+		4B1C3345298D22A800D22AEB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C3344298D22A800D22AEB /* String.swift */; };
+		4B350C3B298C1AB100EB741B /* Book_content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B350C3A298C1AB100EB741B /* Book_content.swift */; };
 		4B6873BD2954FA98007BA991 /* AmaticSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B6873BC2954FA98007BA991 /* AmaticSC-Bold.ttf */; };
 		4B922877295DEA71000A7A19 /* Ankieta.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B922876295DEA71000A7A19 /* Ankieta.json */; };
 		4B922879295DEE6B000A7A19 /* Data_Book_Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B922878295DEE6B000A7A19 /* Data_Book_Load.swift */; };
+		4BBDB72429A116E700660375 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4BBDB72329A116E700660375 /* FirebaseCrashlytics */; };
+		4BBDB72629A116E700660375 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4BBDB72529A116E700660375 /* FirebaseFirestore */; };
+		4BBDB72829A116E700660375 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BBDB72729A116E700660375 /* FirebaseFirestoreSwift */; };
+		4BBDB72B29A11C1F00660375 /* Firebase_manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDB72A29A11C1F00660375 /* Firebase_manager.swift */; };
 		4BBEA6DD2953A8D9004E81BD /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBEA6DC2953A8D9004E81BD /* AmaticSC-Regular.ttf */; };
 		4BC152F4295350BB006C0439 /* Book_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC152F3295350BB006C0439 /* Book_AppApp.swift */; };
 		4BC152F6295350BB006C0439 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC152F5295350BB006C0439 /* ContentView.swift */; };
@@ -43,10 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B1C3341298D212000D22AEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B1C3344298D22A800D22AEB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4B350C3A298C1AB100EB741B /* Book_content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_content.swift; sourceTree = "<group>"; };
 		4B6873BB2954A3CD007BA991 /* Book-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Book-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4B6873BC2954FA98007BA991 /* AmaticSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmaticSC-Bold.ttf"; path = "../../../../Downloads/Amatic_SC/AmaticSC-Bold.ttf"; sourceTree = "<group>"; };
 		4B922876295DEA71000A7A19 /* Ankieta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ankieta.json; sourceTree = "<group>"; };
 		4B922878295DEE6B000A7A19 /* Data_Book_Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_Book_Load.swift; sourceTree = "<group>"; };
+		4BBDB72A29A11C1F00660375 /* Firebase_manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_manager.swift; sourceTree = "<group>"; };
 		4BBEA6DC2953A8D9004E81BD /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmaticSC-Regular.ttf"; path = "../../../../Downloads/Amatic_SC/AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
 		4BC152F0295350BB006C0439 /* Book_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Book_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC152F3295350BB006C0439 /* Book_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_AppApp.swift; sourceTree = "<group>"; };
@@ -70,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BBDB72429A116E700660375 /* FirebaseCrashlytics in Frameworks */,
+				4BBDB72629A116E700660375 /* FirebaseFirestore in Frameworks */,
+				4BBDB72829A116E700660375 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B1C3343298D227700D22AEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B1C3344298D22A800D22AEB /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4BBDB72929A11BFE00660375 /* Firebase_manager */ = {
+			isa = PBXGroup;
+			children = (
+				4BBDB72A29A11C1F00660375 /* Firebase_manager.swift */,
+			);
+			path = Firebase_manager;
+			sourceTree = "<group>";
+		};
 		4BBEA6DB2953A8C0004E81BD /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,11 +152,15 @@
 		4BC152F2295350BB006C0439 /* Book_App */ = {
 			isa = PBXGroup;
 			children = (
+				4BBDB72929A11BFE00660375 /* Firebase_manager */,
+				4B1C3343298D227700D22AEB /* Extensions */,
+				4B1C3341298D212000D22AEB /* GoogleService-Info.plist */,
 				4B6873BB2954A3CD007BA991 /* Book-App-Info.plist */,
 				4BBEA6DB2953A8C0004E81BD /* Font */,
 				4BC152F3295350BB006C0439 /* Book_AppApp.swift */,
 				4B922876295DEA71000A7A19 /* Ankieta.json */,
 				4B922878295DEE6B000A7A19 /* Data_Book_Load.swift */,
+				4B350C3A298C1AB100EB741B /* Book_content.swift */,
 				4BC1531F295356B8006C0439 /* Inside_category.swift */,
 				4BC152F5295350BB006C0439 /* ContentView.swift */,
 				4BC1532329535BFD006C0439 /* Main_view.swift */,
@@ -180,6 +214,11 @@
 			dependencies = (
 			);
 			name = Book_App;
+			packageProductDependencies = (
+				4BBDB72329A116E700660375 /* FirebaseCrashlytics */,
+				4BBDB72529A116E700660375 /* FirebaseFirestore */,
+				4BBDB72729A116E700660375 /* FirebaseFirestoreSwift */,
+			);
 			productName = Book_App;
 			productReference = 4BC152F0295350BB006C0439 /* Book_App.app */;
 			productType = "com.apple.product-type.application";
@@ -252,6 +291,9 @@
 				Base,
 			);
 			mainGroup = 4BC152E7295350BB006C0439;
+			packageReferences = (
+				4BBDB72229A116E700660375 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4BC152F1295350BB006C0439 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,6 +315,7 @@
 				4B922877295DEA71000A7A19 /* Ankieta.json in Resources */,
 				4BC152F8295350BD006C0439 /* Assets.xcassets in Resources */,
 				4BBEA6DD2953A8D9004E81BD /* AmaticSC-Regular.ttf in Resources */,
+				4B1C3342298D212000D22AEB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,10 +342,13 @@
 			files = (
 				4BC15320295356B8006C0439 /* Inside_category.swift in Sources */,
 				4BC1532429535BFD006C0439 /* Main_view.swift in Sources */,
+				4B1C3345298D22A800D22AEB /* String.swift in Sources */,
 				4B922879295DEE6B000A7A19 /* Data_Book_Load.swift in Sources */,
 				4BC152F6295350BB006C0439 /* ContentView.swift in Sources */,
+				4B350C3B298C1AB100EB741B /* Book_content.swift in Sources */,
 				4BC1531E29535167006C0439 /* Color_palete.swift in Sources */,
 				4BC15322295358E1006C0439 /* Info_View.swift in Sources */,
+				4BBDB72B29A11C1F00660375 /* Firebase_manager.swift in Sources */,
 				4BC152F4295350BB006C0439 /* Book_AppApp.swift in Sources */,
 				4BC1532629536142006C0439 /* Profile_View.swift in Sources */,
 			);
@@ -463,6 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Book_App/Preview Content\"";
+				DEVELOPMENT_TEAM = F2T49X6C53;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Book-App-Info.plist";
@@ -492,6 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Book_App/Preview Content\"";
+				DEVELOPMENT_TEAM = F2T49X6C53;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Book-App-Info.plist";
@@ -625,6 +673,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BBDB72229A116E700660375 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BBDB72329A116E700660375 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BBDB72229A116E700660375 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		4BBDB72529A116E700660375 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BBDB72229A116E700660375 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4BBDB72729A116E700660375 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BBDB72229A116E700660375 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BC152E8295350BB006C0439 /* Project object */;
 }

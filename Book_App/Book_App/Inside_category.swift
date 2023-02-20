@@ -7,50 +7,79 @@
 
 import SwiftUI
 
-
-//var book_cover : [Cover] = [
-//Cover(image: "M_I_Animal", title_header: "Zwierzęta", text_header: "XYZ", color: Color(App_Color.menu_color_animal)),
-//Cover(image: "M_I_Animal", title_header: "Bla", text_header: "23", color: Color(App_Color.menu_color_animal)),
-//Cover(image: "M_I_Animal", title_header: "asas", text_header: "X321Z", color: Color(App_Color.menu_color_animal)),
-//]
-
-//struct Cover: Identifiable, Decodable {
-//var id: UUID = UUID()
-//let image: String
-//let title_header: String
-// let text_header: String
-// let color: Color
-//}
-
-
-
 struct Inside_category: View {
+    
     let lib: [Onebook]
     
-    
-    
+    //let book_inside: Book_inside
     
     var body: some View {
-        // ForEach(library, id: \.title) { lib in
-        ZStack {
-            Color(App_Color.background_color)
-                .edgesIgnoringSafeArea(.all)
-            
-            
-            VStack{
-                ForEach(lib, id: \.self){ singlebook in
-                    Text(singlebook.main_title)
-                        .foregroundColor(.yellow)
+        
+        NavigationView{ //when I delete it, there will be a white line
+            TabView{
+                ForEach(lib) { onebook in
+                    NavigationLink (){Book_content.init(book_inside: Book_inside.init(text_book_inside: onebook.book_content?.text_book_inside, title_book_inside: onebook.book_content?.title_book_inside))
+                    } label: {
+                        ZStack {
+                            Image(onebook.top_image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .edgesIgnoringSafeArea(.all)
+                            VStack(spacing:0){
+                                Spacer()
+                                VStack(spacing: 5) {
+                                    Text(onebook.main_title)
+                                        .foregroundColor(Color(hex:onebook.color_title))
+                                        .font(.system(size: 35))
+                                        .multilineTextAlignment(.center)
+                                    Text(onebook.top_description)
+                                        .foregroundColor(Color(hex:onebook.color_title))
+                                        .font(.system(size: 15))
+                                }
+                                .frame(maxWidth: .infinity)
+                                .background(
+                                    LinearGradient(gradient: Gradient(colors: [
+                                        Color(hex:onebook.gradient_color_first).opacity(0.8),
+                                        Color(hex:onebook.gradient_color_second)]),
+                                                   startPoint: .top, endPoint: .bottom))
+                                .edgesIgnoringSafeArea(.all)
+                            }
+                            
+                            
+                        }
+                    }
+                    
+                    
                 }
             }
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .never))
+            .edgesIgnoringSafeArea(.all)
         }
+        .edgesIgnoringSafeArea(.all)
+
     }
 }
 
-struct Inside_category_Previews: PreviewProvider {
-    static var previews: some View {
-        Inside_category(lib: [
-            Onebook.init(main_title: "Abc", top_description: "sdsfsf", top_image: "M_I_Queen")
-        ])
-    }
-}
+//struct Inside_category_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Text("Abc")
+//        //            .sheet(isPresented: .constant(true)) {
+//            .sheet(isPresented: .constant(true)) {
+//                Inside_category(lib: [
+//                    Onebook.init(main_title: "Mały Fabian i jego czarodziejski groch", top_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s....", top_image: "Inside_category_1", gradient_color_first: "#54772E", gradient_color_second: "#222222", color_title: "#FBD4C7", book_content: Book_inside(text_book_inside: "Jaś", title_book_inside: "XYZ"))
+//                ])
+//            }
+//
+//    }
+//}
+
+// #FBD4C7
+//NavigationView
+
+//NavigationLink + ActionButton
+
+
+//NavigationLink {destination: Book_content(book_inside: Book_inside(text_book_inside: onebook.book_content?.text_book_inside, title_book_inside: onebook.book_content?.title_book_inside))
+//
+//Book_content.init(book_inside: Book_inside.init(text_book_inside: "**Lorem** Ipsum**", title_book_inside: "Lorem"))
