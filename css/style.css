@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Amatic SC";
+  background-color: #2f344d;
+}
+/* common css start */
+.common-css {
+  font-family: "amatic sc";
+  font-size: 30px;
+  line-height: 30px;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #e6d4be;
+}
+.title-css {
+  font-family: "amatic sc";
+  font-size: 45px !important;
+  line-height: 45px !important;
+  font-style: normal;
+  letter-spacing: 1px !important;
+  color: #e6d4be;
+}
+/* common css end */
+/* header section start */
+.header-img {
+  width: 126px !important;
+  height: 126px !important;
+  border-radius: 21px !important;
+}
+.header-bg {
+  top: 0%;
+  right: 0%;
+}
+/* header section end */
+/* info section start */
+.info-img {
+  width: 407px;
+  height: 407px;
+  border-radius: 41px;
+}
+/* info section end */
+/* page-1 section start */
+.catagory li {
+  color: #e6d4be;
+}
+.catagory li a {
+  font-family: "amatic sc";
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 25px;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #e6d4be;
+  text-decoration: none;
+}
+
+/* page-1 section end */
+/* page-2 section start */
+.page-2-img {
+  width: 869.8px;
+  height: auto;
+}
+/* page-2 section end */
+/* page-3 section start */
+.page-3-img {
+  width: 302px;
+  height: 301px;
+}
+/* page-3 section end */
